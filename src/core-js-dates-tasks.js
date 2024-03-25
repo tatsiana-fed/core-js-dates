@@ -227,7 +227,7 @@ function getNextFridayThe13th(date) {
   let year = date.getFullYear();
   let friday = new Date(year, month, 13);
 
-  while (true) {
+  while (date) {
     if (friday.getDay() === 5) {
       return friday;
     }
